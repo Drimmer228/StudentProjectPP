@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MenuFragmentClass.MenuWithButtons">
+
+    <LinearLayout
+        android:id="@+id/allButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_parent_background"
+            android:text="ВОРДСЫ"
+            android:textStyle="bold"
+            android:padding="5sp"
+            android:textSize="80sp"
+            android:layout_marginBottom="100dp"/>
+
+        <LinearLayout
+            android:id="@+id/btPlay"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5sp"
+            android:background="@drawable/rounded_child_background">
+            <TextView
+                android:id="@+id/buttonPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:background="@drawable/rounded_parent_background"
+                android:text="ИГРАТЬ"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/countAttemptsOnButton"
+                android:layout_marginTop="1sp"
+                android:layout_width="80sp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="2sp"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_parent_background"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/rounded_parent_background"
+            android:id="@+id/btRating"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:textSize="18sp"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:text="@string/rating"/>
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/rounded_parent_background"
+            android:id="@+id/btSettings"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:textSize="18sp"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:text="@string/settings"/>
+    </LinearLayout>
+
+</FrameLayout>

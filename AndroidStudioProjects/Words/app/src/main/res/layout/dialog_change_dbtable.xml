@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:background="@drawable/rounded_child_background"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:padding="10sp"
+        android:background="@drawable/rounded_parent_background"
+        android:text="@string/table_header"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/wordsTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/rounded_parent_background"
+        android:text="@string/words_header"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/categoryWordsTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/rounded_parent_background"
+        android:text="@string/category_words_header"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

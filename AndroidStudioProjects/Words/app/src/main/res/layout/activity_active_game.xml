@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameResource.ActiveGameActivity">
+
+    <LinearLayout
+        android:id="@+id/letterLayout"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_child_background"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@drawable/rounded_child_background"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/letterLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:background="@drawable/rounded_child_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/keyboardLayout">
+
+        <TextView
+            android:background="@drawable/rounded_parent_background"
+            android:id="@+id/btExitTheLevel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="ВЫХОД"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:background="@drawable/rounded_parent_background"
+            android:id="@+id/btEraseLetter"
+            android:layout_marginStart="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="СТЕРЕТЬ БУКВУ"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:background="@drawable/rounded_parent_background"
+            android:id="@+id/btEraseWord"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="СТЕРЕТЬ СЛОВО"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboardLayout"
+        android:background="@drawable/backgroud_keyboard_darktheme"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/keyBoardLayoutStroke1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/keyBoardLayoutStroke2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/keyBoardLayoutStroke3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

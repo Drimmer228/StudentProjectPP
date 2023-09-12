@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Words</string>
+    <string name="startPlay">Играть</string>
+    <string name="rating">РЕЙТИНГ</string>
+    <string name="settings">НАСТРОЙКИ</string>
+    <string name="authorization">Войти</string>
+    <string name="regestration">Зарегистрироваться</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="repeatPassword">Повторите пароль</string>
+    <string name="dontHaveAccount"><u>Нет аккаунта? Регистрация</u></string>
+    <string name="haveAccount"><u>Есть аккаунт? Авторизация</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_about_ban">Ваш аккаунт был забанен, а это значит, что вы не можете пользоваться данным приложением</string>
+    <string name="table_header">Таблицы</string>
+    <string name="words_header"><u>Слова</u></string>
+    <string name="category_words_header"><u>Категории слов</u></string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MenuFragmentClass.MenuWithButtons">
+
+    <LinearLayout
+        android:id="@+id/allButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_parent_background"
+            android:text="ПАНЕЛЬ АДМИНИСТРАТОРА"
+            android:textStyle="bold"
+            android:padding="5sp"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:layout_marginBottom="100dp"/>
+
+        <TextView
+            android:id="@+id/btTables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:background="@drawable/rounded_parent_background"
+            android:text="ТАБЛИЦЫ БАЗЫ ДАННЫХ"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/rounded_parent_background"
+            android:id="@+id/btUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:textSize="25sp"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:text="ПОЛЬЗОВАТЕЛИ"/>
+
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/rounded_parent_background"
+            android:id="@+id/btSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:textSize="25sp"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:text="@string/settings"/>
+    </LinearLayout>
+
+</FrameLayout>
